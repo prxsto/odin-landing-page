@@ -4,6 +4,9 @@ header {
 
 nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
 }
 
 .logo {
@@ -14,6 +17,9 @@ nav {
 
 .nav-links {
   display: flex;
+  justify-content: space-between;
+  width: 25%;
+  list-style: none;
 }
 
 .nav-links a {
