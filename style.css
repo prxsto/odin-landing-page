@@ -1,5 +1,19 @@
 header {
   background-color: #1F2937;
+  padding: 0px 15% 0px;
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  padding: 0px;
+  margin: 0px;
 }
 
 nav {
@@ -12,13 +26,13 @@ nav {
 .logo {
   font-size: 24px;
   color: #F9FAF8;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-links {
   display: flex;
   justify-content: space-between;
-  width: 25%;
+  gap: 20px;
+  /* width: 25%; */
   list-style: none;
 }
 
@@ -30,13 +44,32 @@ nav {
 
 .hero {
   background-color: #1F2937;
+  margin: 0px;
+  padding: 20px 15% 40px;
+  display: flex;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px;
+  gap: 8px;
 }
 
 .hero h1 {
   font-size: 48px;
-  font-weight: extra-bold;
+  font-weight: bolder;
   color: #F9FAF8;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+.hero p {
+  color: #E5E7EB;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
 }
 
 .hero-signup {
@@ -45,6 +78,67 @@ nav {
   color: white;
   padding: 5px 20px;
   text-decoration: none;
+  width: 80px;
+  text-align: center;
+}
+
+.placeholder-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: grey;
+  margin: 20px;
+}
+
+.placeholder-image p {
+  color: white;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.info h2 {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1F2937;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+.horizontal-gallery {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin: 20px 20% 80px;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-item p {
+  font-size: 18px;
+  font-weight: light;
+  color: gray;
+  text-align: center;
+  text-wrap: wrap;
+  width: 160px;
+}
+
+.gallery-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  border: #3882F6 solid 3px;
 }
 
 .p-dark {
@@ -53,24 +147,76 @@ nav {
 }
 
 .p-light {
+  color: #1F2937;
   font-size: 18px;
 }
 
 .quote {
   background-color: #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 80px 18% 80px;
+}
+
+.quote-body {
+  font-size: 36px;
+  color: #1F2937;
+  font-weight: 100;
+  font-style: italic;
+  /* margin: 80px 20% 0px; */
+  margin: 0px;
+}
+
+.quote-attribution {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  text-align: right;
+  /* margin: 0px 20% 80px; */
+  margin: 0px;
 }
 
 .cta {
+  padding: 60px 15% 60px;
+}
+
+.cta-wrapper {
   background-color: #3882F6;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 60px 10% 60px;
+}
+
+.cta-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.cta-info h4 {
+  margin: 0px;
+  color: white;
+  font-size: 24px;
+}
+
+.cta-info p {
+  color: #E5E7EB;
+  font-size: 18px;
+  margin: 0px;
 }
 
 .cta-signup {
   background-color: #3882F6;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 5px;
   color: white;
   padding: 5px 20px;
   text-decoration: none;
+  align-self: center;
+  justify-self: center;
 }
 
 footer {
